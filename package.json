@@ -1,0 +1,31 @@
+{
+  "name": "sweet-assert",
+  "version": "0.0.0",
+  "description": "SweetJS Macro for assertions that give good error messages.",
+  "main": "assert.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "sweet-macros",
+    "testing",
+    "bdd",
+    "macro",
+    "macros",
+    "assert"
+  ],
+  "author": "Ryan Scheel (Havvy)",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.0.0",
+    "sweet-bdd": "^1.1.0",
+    "sweet.js": "^0.7.1"
+  },
+  "dependencies": {
+    "deep-eql": "^0.1.3"
+  },
+  "scripts": {
+    "test": "npm run-script build && mocha test.js",
+    "build": "sjs -m \"sweet-bdd\" test.sjs test.js -r -o test.js"
+  }
+}
