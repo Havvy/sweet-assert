@@ -13,7 +13,22 @@ const assert = function (details) {
 				message: format("Assertion with `%s` failed\n\tcode: %s\n\tlhs: %s\n\trhs: %s", type, code, lhs, rhs)
 			});
 		}
+
+		return;
 	}
+
+	if (type === "equals") {
+		// FIXME: Implement me.
+		if (false) {
+			throw new AssertionError({
+				message: format("Assertion with `%s` failed\n\tcode: %s\n\tlhs: %s\n\trhs: %s", type, code, lhs, rhs)
+			});
+		}
+	}
+
+	throw new AssertionError({
+		message: format("Unknown assertion type `%s` asserted.\n\tcode: %s", type, code)
+	});
 }
 
 module.exports = assert;

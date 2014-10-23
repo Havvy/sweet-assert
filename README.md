@@ -1,5 +1,7 @@
 Sweet.js plugin for [Elixir style assertions](http://elixir-lang.org/docs/stable/ex_unit/ExUnit.Assertions.html#assert/1)
 
+Only targeting Node 0.10.x or higher.
+
 [![NPM](https://nodei.co/npm/sweet-assert.png?downloads=true&stars=true)](https://nodei.co/npm/tennu/)
 
 ## Example
